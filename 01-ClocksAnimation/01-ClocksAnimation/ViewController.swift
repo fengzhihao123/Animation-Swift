@@ -87,7 +87,6 @@ class ViewController: UIViewController {
         let angleSecond = currentSecond * secondAngle
         //角度转弧度
         let secondArc = angleToArc(angle: CGFloat(angleSecond))
-        //需要围绕Z轴旋转 -- 不累加
         //angle 是弧度
         secondLayer.transform = CATransform3DMakeRotation(secondArc, 0, 0, 1)
        
