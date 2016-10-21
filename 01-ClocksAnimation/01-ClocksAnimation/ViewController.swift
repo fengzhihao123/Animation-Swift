@@ -10,11 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let secondAngle = 6
-    let minuteAngle = 6
-    let hourAngle = 6
-    let hourMinuteAngle = 0.5
-    
+    let timeAngle:CGFloat = 6
     var hourLayer = CALayer()
     var minuteLayer = CALayer()
     var secondLayer = CALayer()
@@ -49,9 +45,7 @@ class ViewController: UIViewController {
     //3.添加分针
     func addMinuteLayer() -> Void {
         minuteLayer.bounds = CGRect(x: 0, y: 0, width: 10, height: 180)
-        //注意:需要把layer显示在屏幕的中心位置
         minuteLayer.position = view.center
-        //自身位置 因为宽窄高长 x轴是0.5 Y轴是1
         minuteLayer.anchorPoint = CGPoint(x: 0.5, y: 1)
         minuteLayer.backgroundColor = UIColor.yellow.cgColor
         view.layer.addSublayer(minuteLayer)
@@ -60,9 +54,7 @@ class ViewController: UIViewController {
     //4.添加秒针
     func addSecondLayer() -> Void {
         secondLayer.bounds = CGRect(x: 0, y: 0, width: 6, height: 200)
-        //注意:需要把layer显示在屏幕的中心位置
         secondLayer.position = view.center
-        //自身位置 因为宽窄高长 x轴是0.5 Y轴是1
         secondLayer.anchorPoint = CGPoint(x: 0.5, y: 1)
         secondLayer.backgroundColor = UIColor.orange.cgColor
         view.layer.addSublayer(secondLayer)
@@ -73,37 +65,33 @@ class ViewController: UIViewController {
     }
     
     func rotationLine() -> Void {
+        //获取当前时间的时分秒
         let calender = NSCalendar.current
         var currentHour = calender.component(.hour, from: Date())
+        //将24转为12如：13点为1点
         currentHour = currentHour % 12
-        
         let currentMinute = calender.component(.minute, from: Date())
         let currentSecond = calender.component(.second, from: Date())
-        /*
-         需求:角度转弧度
-         弧度 = angle * M_PI / 180
-         */
-        //计算当前要旋转的角度
-        let angleSecond = currentSecond * secondAngle
-        //角度转弧度
-        let secondArc = angleToArc(angle: CGFloat(angleSecond))
-        //angle 是弧度
-        secondLayer.transform = CATransform3DMakeRotation(secondArc, 0, 0, 1)
        
+        //旋转秒针
+        setupLayerTransform(timeNum: CGFloat(currentSecond), layer: secondLayer)
         // 旋转分针
-        let angleMinute = currentMinute * minuteAngle
-        let minuteArc = angleToArc(angle: CGFloat(angleMinute))
-        minuteLayer.transform = CATransform3DMakeRotation(minuteArc, 0, 0, 1)
+        setupLayerTransform(timeNum: CGFloat(currentMinute), layer: minuteLayer)
         //旋转时针
-        var angleHour = CGFloat(currentHour) * CGFloat(30)
-        //分针带动时针旋转的角度
-        angleHour = CGFloat(angleHour) + CGFloat(angleMinute/12)
-        //角度转弧度
-        let hourArc = angleToArc(angle: angleHour)
-        //旋转分针
-        hourLayer.transform = CATransform3DMakeRotation(hourArc, 0, 0, 1)
+        //将分钟转化为小时,×5因为要统一提取函数。
+        currentHour = (currentHour + (currentMinute/60)) * 5
+        setupLayerTransform(timeNum: CGFloat(currentHour), layer: hourLayer)
     }
     
+    func setupLayerTransform(timeNum: CGFloat,layer: CALayer) -> Void {
+        //根据时间计算角度
+        let angle = timeNum * timeAngle
+        //将角度转为弧度
+        let arc = angleToArc(angle: angle)
+        layer.transform = CATransform3DMakeRotation(arc, 0, 0, 1)
+    }
+    
+    //角度转弧度
     func angleToArc(angle: CGFloat) -> CGFloat {
         return angle * CGFloat(M_PI) / 180
     }
