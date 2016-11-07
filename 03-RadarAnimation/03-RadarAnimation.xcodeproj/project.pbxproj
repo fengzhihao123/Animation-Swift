@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6B7234A1DCB0244002BFCE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B723491DCB0244002BFCE3 /* AppDelegate.swift */; };
+		D6B7234C1DCB0244002BFCE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7234B1DCB0244002BFCE3 /* ViewController.swift */; };
+		D6B7234F1DCB0244002BFCE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B7234D1DCB0244002BFCE3 /* Main.storyboard */; };
+		D6B723511DCB0244002BFCE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B723501DCB0244002BFCE3 /* Assets.xcassets */; };
+		D6B723541DCB0244002BFCE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B723521DCB0244002BFCE3 /* LaunchScreen.storyboard */; };
+		D6B7235F1DCB0244002BFCE3 /* _3_RadarAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7235E1DCB0244002BFCE3 /* _3_RadarAnimationTests.swift */; };
+		D6B7236A1DCB0244002BFCE3 /* _3_RadarAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B723691DCB0244002BFCE3 /* _3_RadarAnimationUITests.swift */; };
+		D6B723781DCB025E002BFCE3 /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B723771DCB025E002BFCE3 /* RadarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6B7235B1DCB0244002BFCE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B7233E1DCB0244002BFCE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6B723451DCB0244002BFCE3;
+			remoteInfo = "03-RadarAnimation";
+		};
+		D6B723661DCB0244002BFCE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B7233E1DCB0244002BFCE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6B723451DCB0244002BFCE3;
+			remoteInfo = "03-RadarAnimation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6B723461DCB0244002BFCE3 /* 03-RadarAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-RadarAnimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B723491DCB0244002BFCE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6B7234B1DCB0244002BFCE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6B7234E1DCB0244002BFCE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6B723501DCB0244002BFCE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6B723531DCB0244002BFCE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6B723551DCB0244002BFCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B7235A1DCB0244002BFCE3 /* 03-RadarAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-RadarAnimationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B7235E1DCB0244002BFCE3 /* _3_RadarAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_RadarAnimationTests.swift; sourceTree = "<group>"; };
+		D6B723601DCB0244002BFCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B723651DCB0244002BFCE3 /* 03-RadarAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-RadarAnimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B723691DCB0244002BFCE3 /* _3_RadarAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_RadarAnimationUITests.swift; sourceTree = "<group>"; };
+		D6B7236B1DCB0244002BFCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6B723771DCB025E002BFCE3 /* RadarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6B723431DCB0244002BFCE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B723571DCB0244002BFCE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B723621DCB0244002BFCE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6B7233D1DCB0244002BFCE3 = {
+			isa = PBXGroup;
+			children = (
+				D6B723481DCB0244002BFCE3 /* 03-RadarAnimation */,
+				D6B7235D1DCB0244002BFCE3 /* 03-RadarAnimationTests */,
+				D6B723681DCB0244002BFCE3 /* 03-RadarAnimationUITests */,
+				D6B723471DCB0244002BFCE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6B723471DCB0244002BFCE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6B723461DCB0244002BFCE3 /* 03-RadarAnimation.app */,
+				D6B7235A1DCB0244002BFCE3 /* 03-RadarAnimationTests.xctest */,
+				D6B723651DCB0244002BFCE3 /* 03-RadarAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6B723481DCB0244002BFCE3 /* 03-RadarAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D6B723491DCB0244002BFCE3 /* AppDelegate.swift */,
+				D6B723771DCB025E002BFCE3 /* RadarView.swift */,
+				D6B7234B1DCB0244002BFCE3 /* ViewController.swift */,
+				D6B7234D1DCB0244002BFCE3 /* Main.storyboard */,
+				D6B723501DCB0244002BFCE3 /* Assets.xcassets */,
+				D6B723521DCB0244002BFCE3 /* LaunchScreen.storyboard */,
+				D6B723551DCB0244002BFCE3 /* Info.plist */,
+			);
+			path = "03-RadarAnimation";
+			sourceTree = "<group>";
+		};
+		D6B7235D1DCB0244002BFCE3 /* 03-RadarAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6B7235E1DCB0244002BFCE3 /* _3_RadarAnimationTests.swift */,
+				D6B723601DCB0244002BFCE3 /* Info.plist */,
+			);
+			path = "03-RadarAnimationTests";
+			sourceTree = "<group>";
+		};
+		D6B723681DCB0244002BFCE3 /* 03-RadarAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D6B723691DCB0244002BFCE3 /* _3_RadarAnimationUITests.swift */,
+				D6B7236B1DCB0244002BFCE3 /* Info.plist */,
+			);
+			path = "03-RadarAnimationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6B723451DCB0244002BFCE3 /* 03-RadarAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B7236E1DCB0244002BFCE3 /* Build configuration list for PBXNativeTarget "03-RadarAnimation" */;
+			buildPhases = (
+				D6B723421DCB0244002BFCE3 /* Sources */,
+				D6B723431DCB0244002BFCE3 /* Frameworks */,
+				D6B723441DCB0244002BFCE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03-RadarAnimation";
+			productName = "03-RadarAnimation";
+			productReference = D6B723461DCB0244002BFCE3 /* 03-RadarAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6B723591DCB0244002BFCE3 /* 03-RadarAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B723711DCB0244002BFCE3 /* Build configuration list for PBXNativeTarget "03-RadarAnimationTests" */;
+			buildPhases = (
+				D6B723561DCB0244002BFCE3 /* Sources */,
+				D6B723571DCB0244002BFCE3 /* Frameworks */,
+				D6B723581DCB0244002BFCE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6B7235C1DCB0244002BFCE3 /* PBXTargetDependency */,
+			);
+			name = "03-RadarAnimationTests";
+			productName = "03-RadarAnimationTests";
+			productReference = D6B7235A1DCB0244002BFCE3 /* 03-RadarAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6B723641DCB0244002BFCE3 /* 03-RadarAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B723741DCB0244002BFCE3 /* Build configuration list for PBXNativeTarget "03-RadarAnimationUITests" */;
+			buildPhases = (
+				D6B723611DCB0244002BFCE3 /* Sources */,
+				D6B723621DCB0244002BFCE3 /* Frameworks */,
+				D6B723631DCB0244002BFCE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6B723671DCB0244002BFCE3 /* PBXTargetDependency */,
+			);
+			name = "03-RadarAnimationUITests";
+			productName = "03-RadarAnimationUITests";
+			productReference = D6B723651DCB0244002BFCE3 /* 03-RadarAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6B7233E1DCB0244002BFCE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = FZH;
+				TargetAttributes = {
+					D6B723451DCB0244002BFCE3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3TQS7A8S7H;
+						ProvisioningStyle = Automatic;
+					};
+					D6B723591DCB0244002BFCE3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3TQS7A8S7H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D6B723451DCB0244002BFCE3;
+					};
+					D6B723641DCB0244002BFCE3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3TQS7A8S7H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D6B723451DCB0244002BFCE3;
+					};
+				};
+			};
+			buildConfigurationList = D6B723411DCB0244002BFCE3 /* Build configuration list for PBXProject "03-RadarAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6B7233D1DCB0244002BFCE3;
+			productRefGroup = D6B723471DCB0244002BFCE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6B723451DCB0244002BFCE3 /* 03-RadarAnimation */,
+				D6B723591DCB0244002BFCE3 /* 03-RadarAnimationTests */,
+				D6B723641DCB0244002BFCE3 /* 03-RadarAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6B723441DCB0244002BFCE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B723541DCB0244002BFCE3 /* LaunchScreen.storyboard in Resources */,
+				D6B723511DCB0244002BFCE3 /* Assets.xcassets in Resources */,
+				D6B7234F1DCB0244002BFCE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B723581DCB0244002BFCE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B723631DCB0244002BFCE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6B723421DCB0244002BFCE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B7234C1DCB0244002BFCE3 /* ViewController.swift in Sources */,
+				D6B723781DCB025E002BFCE3 /* RadarView.swift in Sources */,
+				D6B7234A1DCB0244002BFCE3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B723561DCB0244002BFCE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B7235F1DCB0244002BFCE3 /* _3_RadarAnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B723611DCB0244002BFCE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B7236A1DCB0244002BFCE3 /* _3_RadarAnimationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6B7235C1DCB0244002BFCE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6B723451DCB0244002BFCE3 /* 03-RadarAnimation */;
+			targetProxy = D6B7235B1DCB0244002BFCE3 /* PBXContainerItemProxy */;
+		};
+		D6B723671DCB0244002BFCE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6B723451DCB0244002BFCE3 /* 03-RadarAnimation */;
+			targetProxy = D6B723661DCB0244002BFCE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6B7234D1DCB0244002BFCE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B7234E1DCB0244002BFCE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6B723521DCB0244002BFCE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B723531DCB0244002BFCE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6B7236C1DCB0244002BFCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6B7236D1DCB0244002BFCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6B7236F1DCB0244002BFCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
+				INFOPLIST_FILE = "03-RadarAnimation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-3-RadarAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D6B723701DCB0244002BFCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
+				INFOPLIST_FILE = "03-RadarAnimation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-3-RadarAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D6B723721DCB0244002BFCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
+				INFOPLIST_FILE = "03-RadarAnimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-3-RadarAnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/03-RadarAnimation.app/03-RadarAnimation";
+			};
+			name = Debug;
+		};
+		D6B723731DCB0244002BFCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
+				INFOPLIST_FILE = "03-RadarAnimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-3-RadarAnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/03-RadarAnimation.app/03-RadarAnimation";
+			};
+			name = Release;
+		};
+		D6B723751DCB0244002BFCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
+				INFOPLIST_FILE = "03-RadarAnimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-3-RadarAnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "03-RadarAnimation";
+			};
+			name = Debug;
+		};
+		D6B723761DCB0244002BFCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3TQS7A8S7H;
+				INFOPLIST_FILE = "03-RadarAnimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fengzhihao.-3-RadarAnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "03-RadarAnimation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6B723411DCB0244002BFCE3 /* Build configuration list for PBXProject "03-RadarAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B7236C1DCB0244002BFCE3 /* Debug */,
+				D6B7236D1DCB0244002BFCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B7236E1DCB0244002BFCE3 /* Build configuration list for PBXNativeTarget "03-RadarAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B7236F1DCB0244002BFCE3 /* Debug */,
+				D6B723701DCB0244002BFCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D6B723711DCB0244002BFCE3 /* Build configuration list for PBXNativeTarget "03-RadarAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B723721DCB0244002BFCE3 /* Debug */,
+				D6B723731DCB0244002BFCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D6B723741DCB0244002BFCE3 /* Build configuration list for PBXNativeTarget "03-RadarAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B723751DCB0244002BFCE3 /* Debug */,
+				D6B723761DCB0244002BFCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6B7233E1DCB0244002BFCE3 /* Project object */;
+}

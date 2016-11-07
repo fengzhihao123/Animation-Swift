@@ -11,11 +11,11 @@ import CoreGraphics
 import QuartzCore
 
 class HamburgerButton : UIButton {
+    //
     let shortStroke: CGPath = {
         let path = CGMutablePath()
         path.move(to: CGPoint(x: 2, y: 2))
         path.addLine(to: CGPoint(x: 28, y:2))
-        
         return path
     }()
     

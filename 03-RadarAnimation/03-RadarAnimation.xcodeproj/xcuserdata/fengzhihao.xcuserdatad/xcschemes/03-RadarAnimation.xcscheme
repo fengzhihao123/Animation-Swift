@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D627B4471DB9B330002EC348"
-               BuildableName = "02-HumburgerButton.app"
-               BlueprintName = "02-HumburgerButton"
-               ReferencedContainer = "container:02-HumburgerButton.xcodeproj">
+               BlueprintIdentifier = "D6B723451DCB0244002BFCE3"
+               BuildableName = "03-RadarAnimation.app"
+               BlueprintName = "03-RadarAnimation"
+               ReferencedContainer = "container:03-RadarAnimation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D627B45B1DB9B330002EC348"
-               BuildableName = "02-HumburgerButtonTests.xctest"
-               BlueprintName = "02-HumburgerButtonTests"
-               ReferencedContainer = "container:02-HumburgerButton.xcodeproj">
+               BlueprintIdentifier = "D6B723591DCB0244002BFCE3"
+               BuildableName = "03-RadarAnimationTests.xctest"
+               BlueprintName = "03-RadarAnimationTests"
+               ReferencedContainer = "container:03-RadarAnimation.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D627B4661DB9B330002EC348"
-               BuildableName = "02-HumburgerButtonUITests.xctest"
-               BlueprintName = "02-HumburgerButtonUITests"
-               ReferencedContainer = "container:02-HumburgerButton.xcodeproj">
+               BlueprintIdentifier = "D6B723641DCB0244002BFCE3"
+               BuildableName = "03-RadarAnimationUITests.xctest"
+               BlueprintName = "03-RadarAnimationUITests"
+               ReferencedContainer = "container:03-RadarAnimation.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D627B4471DB9B330002EC348"
-            BuildableName = "02-HumburgerButton.app"
-            BlueprintName = "02-HumburgerButton"
-            ReferencedContainer = "container:02-HumburgerButton.xcodeproj">
+            BlueprintIdentifier = "D6B723451DCB0244002BFCE3"
+            BuildableName = "03-RadarAnimation.app"
+            BlueprintName = "03-RadarAnimation"
+            ReferencedContainer = "container:03-RadarAnimation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,19 +75,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D627B4471DB9B330002EC348"
-            BuildableName = "02-HumburgerButton.app"
-            BlueprintName = "02-HumburgerButton"
-            ReferencedContainer = "container:02-HumburgerButton.xcodeproj">
+            BlueprintIdentifier = "D6B723451DCB0244002BFCE3"
+            BuildableName = "03-RadarAnimation.app"
+            BlueprintName = "03-RadarAnimation"
+            ReferencedContainer = "container:03-RadarAnimation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disbale"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -101,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D627B4471DB9B330002EC348"
-            BuildableName = "02-HumburgerButton.app"
-            BlueprintName = "02-HumburgerButton"
-            ReferencedContainer = "container:02-HumburgerButton.xcodeproj">
+            BlueprintIdentifier = "D6B723451DCB0244002BFCE3"
+            BuildableName = "03-RadarAnimation.app"
+            BlueprintName = "03-RadarAnimation"
+            ReferencedContainer = "container:03-RadarAnimation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

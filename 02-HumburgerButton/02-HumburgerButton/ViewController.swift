@@ -16,7 +16,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 38.0 / 255, green: 151.0 / 255, blue: 68.0 / 255, alpha: 1)
         
-        self.button = HamburgerButton(frame: CGRect(x: 133, y: 133, width: 54, height: 54))
+        self.button = HamburgerButton(frame: CGRect(x: 133, y: 133, width: 100, height: 100))
+        self.button.backgroundColor = UIColor.black
         self.button.addTarget(self, action: #selector(ViewController.toggle(_:)), for:.touchUpInside)
         
         self.view.addSubview(button)

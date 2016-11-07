@@ -65,22 +65,32 @@ class ViewController: UIViewController {
     }
     
     func rotationLine() -> Void {
+    
         //获取当前时间的时分秒
         let calender = NSCalendar.current
-        var currentHour = calender.component(.hour, from: Date())
+        let currentHour = calender.component(.hour, from: Date())
         //将24转为12如：13点为1点
-        currentHour = currentHour % 12
+//        currentHour = currentHour % 12
         let currentMinute = calender.component(.minute, from: Date())
         let currentSecond = calender.component(.second, from: Date())
        
-        //旋转秒针
-        setupLayerTransform(timeNum: CGFloat(currentSecond), layer: secondLayer)
-        // 旋转分针
-        setupLayerTransform(timeNum: CGFloat(currentMinute), layer: minuteLayer)
-        //旋转时针
-        //将分钟转化为小时,×5因为要统一提取函数。
-        currentHour = (currentHour + (currentMinute/60)) * 5
-        setupLayerTransform(timeNum: CGFloat(currentHour), layer: hourLayer)
+        let hoursAngle = (CGFloat(currentHour) / 12) * CGFloat(M_PI) * 2
+        let minsAngle = (CGFloat(currentMinute) / 60) * CGFloat(M_PI) * 2
+        let secondAngle = (CGFloat(currentSecond) / 60) * CGFloat(M_PI) * 2
+        
+        hourLayer.transform = CATransform3DMakeRotation(hoursAngle, 0, 0, 1)
+        minuteLayer.transform = CATransform3DMakeRotation(minsAngle, 0, 0, 1)
+        secondLayer.transform = CATransform3DMakeRotation(secondAngle, 0, 0, 1)
+        
+
+//        //旋转秒针
+//        setupLayerTransform(timeNum: CGFloat(currentSecond), layer: secondLayer)
+//        // 旋转分针
+//        setupLayerTransform(timeNum: CGFloat(currentMinute), layer: minuteLayer)
+//        //旋转时针
+//        //将分钟转化为小时,×5因为要统一提取函数。
+//        currentHour = (currentHour + (currentMinute/60)) * 5
+//        setupLayerTransform(timeNum: CGFloat(currentHour), layer: hourLayer)
     }
     
     func setupLayerTransform(timeNum: CGFloat,layer: CALayer) -> Void {
