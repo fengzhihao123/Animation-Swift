@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         view.addSubview(radarView)
         UIView.animate(withDuration: 2, animations: {
             radarView.transform = CGAffineTransform().scaledBy(x: 4, y: 4)
-//            radarView.alpha = 0
+            radarView.alpha = 0
         }, completion: {_ in
 //            radarView.removeFromSuperview()
         })
